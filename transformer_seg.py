@@ -6,12 +6,12 @@ import torch
 from torch import nn
 from torch.nn import CrossEntropyLoss, MSELoss
 from einops import rearrange
-from SETR.transformer_model import TransModel2d, TransConfig
+from transformer_model import TransModel2d, TransConfig
 import math
 import torch.nn.functional as F
 from  torchvision import  models
-from FaPN.DCNv2.dcn_v2 import DCN,DCN_Fuse
-from self_attention_cv import AxialAttentionBlock
+# from FaPN.DCNv2.dcn_v2 import DCN,DCN_Fuse
+# from self_attention_cv import AxialAttentionBlock
 
 
 
