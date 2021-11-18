@@ -1,8 +1,8 @@
-from SETR.transformer_seg import SETRModel, Vit
+from transformer_seg import DACFormerModel, Vit
 import torch 
 
 if __name__ == "__main__":
-    net = SETRModel(patch_size=(32, 32), 
+    net = DACFormerModel(patch_size=(32, 32), 
                     in_channels=3, 
                     out_channels=1, 
                     hidden_size=1024, 
