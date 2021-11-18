@@ -485,7 +485,7 @@ class Attention_block(nn.Module):
         return x * psi
 
 ###########################################################
-class SETRModel(nn.Module):
+class DACFormerModel(nn.Module):
     def __init__(self, patch_size=(32, 32), 
                         in_channels=3, 
                         out_channels=1, 
