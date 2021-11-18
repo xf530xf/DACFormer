@@ -1,7 +1,7 @@
 # data_url : https://www.kaggle.com/c/carvana-image-masking-challenge/data
 import torch
 import numpy as np
-from DAC.transformer_seg import SETRModel
+from transformer_seg import SETRModel
 from PIL import Image
 import glob
 import torch.nn as nn
@@ -28,7 +28,7 @@ out_channels = 1
 
 
 def build_model():
-    model = SETRModel(patch_size=(32, 32),
+    model = DACFormerModel(patch_size=(32, 32),
                       in_channels=3,
                       out_channels=1,
                       hidden_size=1024,
